@@ -13,7 +13,7 @@ df_winter = df.loc[(df['year_month'] == '2018-12') | (df['year_month'] == '2019-
 df_winter_avg = df_winter[['production_hydro', 'production_nuclear', 'production_therm_and_renewable']].mean()
 df_winter_total_avg = round(df_winter[['production_total_netto']].mean()[0])
 
-labels = ['Hydro', 'Nuclear', 'Therm and Renewables']
+labels = ['Hydro', 'Nuclear', 'Thermal and Renewables']
 colors = [constants.HYDRO_COLOR, constants.NUCLEAR_COLOR, constants.THERM_AND_RENEWABLES_COLOR]
 
 fig = make_subplots(1, 2, specs=[[{'type': 'domain'}, {'type': 'domain'}]],

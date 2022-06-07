@@ -23,7 +23,7 @@ df = df.loc[(df['year_month'] >= '2016-04') & (df['year_month'] < '2019-10')]
 df['month'] = df['month'].apply(lambda x: month_map.get(x))
 
 production_therm_and_renewable = {
-    'name': 'Therm. and Renewables',
+    'name': 'Thermal and Renewables',
     'type': 'bar',
     'x': [df['year_season'], df['month']],
     'y': df['production_therm_and_renewable'],

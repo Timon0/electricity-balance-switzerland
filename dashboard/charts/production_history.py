@@ -114,7 +114,7 @@ fig.add_annotation(
         y=more_consumed_than_produced_y,
         xanchor='center',
         showarrow=True,
-        text='More consumed<br> than produced',
+        text='more consumed<br> than produced',
         ay=-70
     )
 )
